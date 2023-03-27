@@ -27,11 +27,11 @@
 		<div class="login login-with-news-feed">
 			<!-- begin news-feed -->
 			<div class="news-feed">
-				<div class="news-image" style="background-image: url({{url_plug()}}/assets/img/login-bg/login-bg-11.jpg)"></div>
+				<div class="news-image" style="background-image: url({{url_plug()}}/img/bgbg.jpg)"></div>
 				<div class="news-caption">
-					<h4 class="caption-title"><b>Color</b> Admin App</h4>
+					<h4 class="caption-title"><b>E-Procurement</b> PT KPDP</h4>
 					<p>
-						Download the Color Admin app for iPhone®, iPad®, and Android™. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+						Websaite resmi vendor management PT KPDP
 					</p>
 				</div>
 			</div>

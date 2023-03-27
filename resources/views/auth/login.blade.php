@@ -37,16 +37,14 @@
 			</div>
 			<!-- end news-feed -->
 			<!-- begin right-content -->
-			<div class="right-content">
+			<div class="right-content" style="background:#382e54">
 				<!-- begin login-header -->
-				<div class="login-header">
+				<div class="login-header" style="text-align:center">
 					<div class="brand">
-						<span class="logo"></span> <b>Color</b> Admin
-						<small>responsive bootstrap 4 admin template</small>
+						<img src="{{url_plug()}}/img/logo.png" width="90%">
+						<small>E-Procurement PT KPDP</small>
 					</div>
-					<div class="icon">
-						<i class="fa fa-sign-in-alt"></i>
-					</div>
+					
 				</div>
 				<!-- end login-header -->
 				<!-- begin login-content -->

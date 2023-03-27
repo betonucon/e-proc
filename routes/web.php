@@ -39,9 +39,10 @@ Route::get('/testevent', function () {
 Route::get('/pendaftaran', [RegController::class, 'index']);
 Route::get('/pendaftaran/rekanan', [RegController::class, 'rekanan']);
 Route::post('/pendaftaran/store_rekanan', [RegController::class, 'store_rekanan']);
+Route::get('/', [RegController::class, 'index']);
+    
 Route::group(['middleware'    => 'auth'],function(){
     
-    Route::get('/', [HomeController::class, 'index']);
     Route::get('/home', [HomeController::class, 'index']);
 
     Route::group(['prefix' => 'vendors'],function(){

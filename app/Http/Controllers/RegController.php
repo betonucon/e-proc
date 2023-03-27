@@ -18,7 +18,7 @@ class RegController extends Controller
     {
         error_reporting(0);
         $template='top';
-        return view('auth.register',compact('template'));
+        return view('index',compact('template'));
     }
     public function rekanan(request $request)
     {

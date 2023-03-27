@@ -29,17 +29,22 @@ class HomeController extends Controller
     {
         error_reporting(0);
         $template='top';
-        $data=VMSvendor::where('users_id',Auth::user()->id)->first();
-        $step=$data->status;
-        if($data->status_approve==1){
-            return view('home',compact('template','data','step'));
-        }else{
-            if($data->status_approve==10){
-                return view('home_perbaikan',compact('template','data','step'));
+        if(Auth::user()->role_id==5){
+            $data=VMSvendor::where('users_id',Auth::user()->id)->first();
+            $step=$data->status;
+            if($data->status_approve==1){
+                return view('home',compact('template','data','step'));
             }else{
-                return view('home_progres',compact('template','data','step'));
+                if($data->status_approve==10){
+                    return view('home_perbaikan',compact('template','data','step'));
+                }else{
+                    return view('home_progres',compact('template','data','step'));
+                }
+                
             }
-            
+        }
+        if(Auth::user()->role_id==1){
+            return view('home_admin',compact('template'));
         }
         
     }

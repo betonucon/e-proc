@@ -175,23 +175,20 @@
 				</button>
 			</div>
 			<!-- end navbar-header --><!-- begin header-nav -->
-			<!-- <ul class="navbar-nav navbar-right">
+			<ul class="navbar-nav navbar-right">
 				
 				<li class="dropdown navbar-user">
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-						<img src="{{url_plug()}}/assets/img/user/user-13.jpg" alt="" /> 
-						<span class="d-none d-md-inline">Adam Schwartz</span> <b class="caret"></b>
+						<i class="fa fa-sign-in-alt"></i>
+						<span class="d-none d-md-inline">Login</span> <b class="caret"></b>
 					</a>
 					<div class="dropdown-menu dropdown-menu-right">
-						<a href="javascript:;" class="dropdown-item">Edit Profile</a>
-						<a href="javascript:;" class="dropdown-item"><span class="badge badge-danger pull-right">2</span> Inbox</a>
-						<a href="javascript:;" class="dropdown-item">Calendar</a>
-						<a href="javascript:;" class="dropdown-item">Setting</a>
+						<a href="{{url('pendaftaran/rekanan')}}" class="dropdown-item"><i class="fas fa-users"></i> Registrasi Rekanan</a>
 						<div class="dropdown-divider"></div>
-						<a href="javascript:;" class="dropdown-item">Log Out</a>
+						<a href="{{url('login')}}" class="dropdown-item"><i class="fa fa-sign-in-alt"></i> Login</a>
 					</div>
 				</li>
-			</ul> -->
+			</ul>
 			<!-- end header-nav -->
 		</div>
 		<!-- end #header -->
